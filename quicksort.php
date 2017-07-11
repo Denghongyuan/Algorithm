@@ -1,6 +1,6 @@
 <?php
 /**
- * 
+ * quichsort
  */
 function quicksort($array)
 {
@@ -24,4 +24,10 @@ function quicksort($array)
 	$next_array = quicksort($next_array);
 	return array_merge($pre_array, [$target], $next_array);
 }
+// test
+$arr = [1,7,300,30,75,48, 301, 50, 66];
+$new_arr = quicksort($arr);
+echo '<pre>';
+var_dump($new_arr);
+echo '</pre>';
 ?>
