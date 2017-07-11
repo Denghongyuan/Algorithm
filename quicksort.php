@@ -11,7 +11,7 @@ function quicksort($array)
 	$pre_array = [];
 	$next_array = [];
 	foreach ($array as $k => $v) {
-		if ($v == $target) {
+		if ($k == 0) {
 			continue;
 		}
 		if ($v < $target) {
