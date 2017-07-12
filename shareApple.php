@@ -13,7 +13,7 @@ function appleShare()
 	$share_times = 1;
 	while ($share_times < 6) {
 		if (is_int($total * 5/4)) {
-			$total = $total*5/4 +1;
+			$total = $total*5/4 +1; 
 			$share_times++;
 		} else {
 			$share_times = 1;

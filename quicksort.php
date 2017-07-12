@@ -1,6 +1,6 @@
 <?php
 /**
- * quichsort
+ * 快速排序
  */
 function quicksort($array)
 {
@@ -12,12 +12,12 @@ function quicksort($array)
 	$next_array = [];
 	foreach ($array as $k => $v) {
 		if ($k == 0) {
-			continue;
+			continue;		//参考值不参与排序
 		}
 		if ($v < $target) {
-			$pre_array[] = $v;
+			$pre_array[] = $v;		//比参考值小的放在左边
 		} else {
-			$next_array[] = $v;
+			$next_array[] = $v;		//比参考值大的放在右边
 		}
 	}
 	$pre_array = quicksort($pre_array);
