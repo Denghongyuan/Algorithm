@@ -5,6 +5,9 @@
  * 二天，大家分赃，也是分成5份多一个扔给猴了。最后一人分了一份。问：共有多少苹果？
  */
 
+/**
+ * 该方法是根据最后每人平均分配的苹果求值
+ */
 function appleShare()
 {
 	$avarage = 1;
@@ -26,6 +29,9 @@ function appleShare()
 	echo 'total apples : '.$total;
 }
 
+/**
+ * 该方法是根据总苹果数求值
+ */
 function appleShare2()
 {
 	for ($i = 1; ; $i++)
