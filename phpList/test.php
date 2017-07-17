@@ -33,9 +33,7 @@ function Josephus($list)
 			$p = $p->next;
 		}
 	}
-	echo '<pre>';
-	var_dump($list);die;
-	echo '</pre>';
+	echo 'The final King is ' . $p->data;
 }
 
 $monkeys = ['king', 'mon1', 'mon2', 'mon3', 'mon4', 'mon5', 'mon6', 'mon7', 'mon8'];
